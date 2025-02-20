@@ -625,11 +625,7 @@ if CUSTOM_NAME:
         data = r.json()
         if r.ok:
             if "logo" in data:
-                WEBUI_FAVICON_URL = url = (
-                    f"https://api.openwebui.com{data['logo']}"
-                    if data["logo"][0] == "/"
-                    else data["logo"]
-                )
+                WEBUI_FAVICON_URL = url = 'https://litpeaks.com/images/abiomix_logo.png'
 
                 r = requests.get(url, stream=True)
                 if r.status_code == 200:
@@ -638,11 +634,7 @@ if CUSTOM_NAME:
                         shutil.copyfileobj(r.raw, f)
 
             if "splash" in data:
-                url = (
-                    f"https://api.openwebui.com{data['splash']}"
-                    if data["splash"][0] == "/"
-                    else data["splash"]
-                )
+                url = 'https://litpeaks.com/images/abiomix_logo.png'
 
                 r = requests.get(url, stream=True)
                 if r.status_code == 200:
