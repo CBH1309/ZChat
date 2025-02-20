@@ -8,7 +8,7 @@ on:
   #    - dev
   #  tags:
    #   - v*
-
+permissions: write-all
 env:
   REGISTRY: ghcr.io
 
