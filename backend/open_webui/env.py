@@ -108,7 +108,7 @@ log.setLevel(SRC_LOG_LEVELS["CONFIG"])
 
 
 WEBUI_NAME = os.environ.get("WEBUI_NAME", "Open WebUI")
-WEBUI_NAME = 'Litpeaks intelligence'
+WEBUI_NAME = 'ZChat'
 #if WEBUI_NAME != "Open WebUI":
  #   WEBUI_NAME += " (Open WebUI)"
 
